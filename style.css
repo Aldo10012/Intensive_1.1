@@ -1,0 +1,113 @@
+body{
+    margin: 0px;
+}
+/**************************************************************** 
+    Stylizing navbar
+*****************************************************************/
+nav{
+    background-color: red;
+    padding: 25px;
+    min-height: 15vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav>h1{
+    /* background-color: pink; */
+    text-align: center;
+    width: auto;
+}
+
+
+/**************************************************************** 
+    Stylizing Main
+*****************************************************************/
+main{
+    display: flex;
+    flex-direction: row;
+    min-height: 80vh;
+
+    background-color: pink;
+}
+
+/**************************************************************** 
+    Stylizing sidenav
+*****************************************************************/
+
+sidenav{
+    background-color: lime;
+    width: 33%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+sidenav > div{
+    border: solid 1px;
+    padding: 0px 15px 15px 15px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+textarea{
+    min-height: 70%;
+
+}
+
+/**************************************************************** 
+    Stylizing content
+*****************************************************************/
+
+content{
+    background-color: aqua;
+    width: 67%;
+    /* height: auto; */
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.tracker{
+    background-color: azure;
+    padding:15px;
+    margin: 15px;
+    width: 25%;
+    height: 25%;
+    border: solid 5px;
+}
+
+.tracker > p{
+    text-align: center;
+}
+
+.marker-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.btn-section{
+    background-color: red;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button#add-habit{
+    padding: 25px;
+    border-radius: 10%;
+    width: 200px;
+    font-size: 1em;
+}
+
+
+
