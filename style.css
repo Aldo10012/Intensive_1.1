@@ -74,15 +74,17 @@ content{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
+
 
 .tracker{
     background-color: rgba(203, 255, 203, 0.1);
     padding:15px;
     margin: 15px;
     width: 40%;
-    height: 25%;
+    height: 200px;
     border: solid 5px darkgreen;
     color: green;
     font-weight: bold;
@@ -91,6 +93,9 @@ content{
 
 .tracker > p{
     text-align: center;
+}
+.tracker > p{
+    font-size: 1em;
 }
 
 .marker-row{
@@ -114,6 +119,8 @@ content{
 /**************************************************************** 
     Stylizing new habit section
 *****************************************************************/
+
+
 #new-habit-section{
     /* background-color: red; */
     width: 100%;
@@ -122,7 +129,7 @@ content{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    align-self: flex-end;
+    align-self: flex-start;
     
 }
 
