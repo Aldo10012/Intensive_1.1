@@ -27,6 +27,7 @@ main{
     display: flex;
     flex-direction: row;
     min-height: 80vh;
+    max-height: 1000vh;
 
     background-color: pink;
 }
@@ -77,7 +78,7 @@ content{
     background-color: azure;
     padding:15px;
     margin: 15px;
-    width: 25%;
+    width: 40%;
     height: 25%;
     border: solid 5px;
 }
@@ -92,21 +93,35 @@ content{
     justify-content: space-evenly;
 }
 
-
-.btn-section{
+/**************************************************************** 
+    Stylizing new habit section
+*****************************************************************/
+#new-habit-section{
     background-color: red;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-button#add-habit{
-    padding: 25px;
-    border-radius: 10%;
-    width: 200px;
-    font-size: 1em;
+#new-habit-section > input{
+    width: 400px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 30px;
+}
+#new-habit-section > button{
+    padding: 15px;
+    margin: 10px;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
 }
 
 
