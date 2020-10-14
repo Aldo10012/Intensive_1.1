@@ -7,6 +7,8 @@ This project is a habit tracker that uses the Martin Method. This method allows 
 
 
 SCREEN SHOT OF PROJECT
+![Uploading Screen Shot 2020-10-14 at 3.59.30 PM.png…]()
+
 ![](./image/Screen-Shot.png)
 
 
