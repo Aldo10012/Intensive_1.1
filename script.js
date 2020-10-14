@@ -7,16 +7,39 @@ function createNewHabit() {
     const habitName = get_habit_name.value
     console.log(habitName)
 
-    var newDiv = document.createElement("div");
-    var newP = document.createElement('p')
-    
-    newP.innerHTML('hello')
-    newDiv.appendChild(newP)
-    //newP.innerHTML('hello')
+    var emptyHabit = document.getElementById('tracker').innerHTML
 
-    // var textnode = document.createTextNode("Water");
-    // node.appendChild(textnode);
-    // document.getElementById("myList").appendChild(node);
+    // Creating the Div
+    var trackerDiv = document.createElement('div')
+    trackerDiv.className = "tracker";
+    trackerDiv.innerHTML = emptyHabit
+
+        //Create <p> to display the habit
+        // var showHabitName = document.createElement('p')
+        // showHabitName = document.createTextNode(habitName)
+        // trackerDiv.appendChild(showHabitName)
+
+        // // Create <div class='marker-row'>
+        // var makerRowDiv = document.createElement('div')
+        //     for (i = 1; i < 8; i++) {
+        //         var input = document.createElement('input')
+        //         input.setAttribute("type", "checkbox")
+        //         makerRowDiv.appendChild(input)
+        //     }
+
+        // // appending makerRowDiv into trackerDiv
+        // trackerDiv.appendChild(makerRowDiv)
+
+
+
+
+
+    // append component into content
+    document.getElementById("content").appendChild(trackerDiv);
+
+
+
+
 }
 
 
