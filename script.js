@@ -7,39 +7,17 @@ function createNewHabit() {
     const habitName = get_habit_name.value
     console.log(habitName)
 
+    // Creating empty component with same Html as tracker
     var emptyHabit = document.getElementById('tracker').innerHTML
-
     // Creating the Div
     var trackerDiv = document.createElement('div')
+    // assigning trackerDiv class name "tracker" so that CSS can be properly implemented
     trackerDiv.className = "tracker";
+    // asigning trackerDiv same HTML as emtpy div to properly display component
     trackerDiv.innerHTML = emptyHabit
-
-        //Create <p> to display the habit
-        // var showHabitName = document.createElement('p')
-        // showHabitName = document.createTextNode(habitName)
-        // trackerDiv.appendChild(showHabitName)
-
-        // // Create <div class='marker-row'>
-        // var makerRowDiv = document.createElement('div')
-        //     for (i = 1; i < 8; i++) {
-        //         var input = document.createElement('input')
-        //         input.setAttribute("type", "checkbox")
-        //         makerRowDiv.appendChild(input)
-        //     }
-
-        // // appending makerRowDiv into trackerDiv
-        // trackerDiv.appendChild(makerRowDiv)
-
-
-
-
 
     // append component into content
     document.getElementById("content").appendChild(trackerDiv);
-
-
-
-
 }
 
 

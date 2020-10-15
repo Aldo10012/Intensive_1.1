@@ -1,18 +1,21 @@
 body{
     margin: 0px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    /* background-color: ; */
 }
 /**************************************************************** 
     Stylizing navbar
 *****************************************************************/
 nav{
-    background-color: lightgreen;
-    padding: 20px;
-    min-height: 15vh; 
+    background-color: #fafafa;
+
+    padding: 10px;
+    max-height: 15vh; 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    border: solid gray;
+    border-width: 0px 0px 2px 0px;
 }
 
 nav>h1{
@@ -21,7 +24,11 @@ nav>h1{
     width: auto;
     font-size: 3em;
     font-weight: 400;   
-    /* color: green; */
+    color: black;
+}
+
+#martin{
+    color: #4285F4;
 }
 
 
@@ -31,7 +38,7 @@ nav>h1{
 main{
     display: flex;
     flex-direction: row;
-    min-height: 80vh;
+    min-height: 85vh;
     height: auto;
 }
 
@@ -40,12 +47,14 @@ main{
 *****************************************************************/
 
 sidenav{
-    background-color: lightgray;
+    background-color: #fafafa;
     width: 33%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
+    border: solid gray;
+    border-width: 0px 2px 0px 0px
 }
 
 sidenav > div{
@@ -55,12 +64,16 @@ sidenav > div{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #4285F4;
 }
 
 textarea{
     min-height: 70%;
     background-color: rgba(0,0,0,0);
-    font-size: 1.5em;
+    font-size: 1.3em;
+    color: white;
+    border: solid 2px #4285F4;
+    box-shadow: 3px 6px #193766;
 
 }
 
@@ -69,7 +82,7 @@ textarea{
 *****************************************************************/
 
 content{
-    /* background-color: aqua; */
+    background-color: #fafafa;
     width: 67%;
     /* height: auto; */
     padding: 15px;
@@ -82,23 +95,23 @@ content{
 
 
 .tracker{
-    background-color: rgba(203, 255, 203, 0.1);
+    background-color: #4286f40c;
     padding:15px;
     margin: 15px;
     width: 40%;
     height: 200px;
-    border: solid 5px darkgreen;
-    color: green;
+    border: solid 5px #4285F4;
+    color: #4285F4;
     font-weight: bold;
-    border-radius: 25px;;
+    border-radius: 25px;
+    box-shadow: 5px 10px #193766;
 }
 
 .tracker > p{
     text-align: center;
+    font-size: 1.3em;
 }
-.tracker > p{
-    font-size: 1em;
-}
+
 
 .marker-row{
     display: flex;
@@ -107,7 +120,7 @@ content{
 }
 
 .marker-row > input{
-    background-color: #fff;
+    background-color: #fafafa;
     border: 1px solid #ccc;
     border-radius: 50%;
     cursor: pointer;
@@ -140,8 +153,9 @@ content{
     padding: 15px;
     margin: 10px;
     border-radius: 30px;
-    border-color: green;
+    border-color: #4285F4;
     border-width: 5px;
+    /* background-color: lightgreen;   */
 }
 #new-habit-section > button{
     padding: 15px;
@@ -154,8 +168,8 @@ content{
     flex-direction: column;
     justify-content: center;
     align-self: center;
-    background-color: lightgreen;
-    border-color: green;
+    background-color: #679df3;
+    border-color: #4285F4;
 }
 
 
